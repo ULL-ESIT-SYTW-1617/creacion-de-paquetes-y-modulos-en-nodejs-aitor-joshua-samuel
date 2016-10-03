@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Tareas iniciales",
   "main": "index.js",
+  "bin": "./bin/gitbook-start.js",
   "scripts": {
     "generate-gitbook": "./scripts/losh generate-gitbook",
     "generate-wiki": "./scripts/losh generate-wiki",
@@ -23,7 +24,7 @@
     "boilerplate",
     "starter"
   ],
-  "author": "Aitor Bernal Falcón, Joshua Perez García, Samuel Ramos Barroso",
+  "author": "Aitor Bernal Falcón <alu0100830064@ull.edu.es> (https://alu0100830064.github.io/), Joshua Perez García <alu0100830064@ull.edu.es> (https://joshuape.github.io/), Samuel Ramos Barroso <alu0100815146@ull.edu.es> (https://losnen.github.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Losnen/tareas-iniciales-aitor-joshua-samuel/issues"
@@ -37,5 +38,8 @@
     "gitbook-cli": "^0.3.4",
     "gulp-gh-pages": "^0.5.4",
     "gulp-shell": "^0.5.2"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
   }
 }
