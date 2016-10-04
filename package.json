@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Tareas iniciales",
   "main": "index.js",
-  "bin": "./bin/gitbook-start.js",
+  "bin" : { "gitbook-start" : "./bin/gitbook-start.js" },
   "scripts": {
     "generate-gitbook": "./scripts/losh generate-gitbook",
     "generate-wiki": "./scripts/losh generate-wiki",
