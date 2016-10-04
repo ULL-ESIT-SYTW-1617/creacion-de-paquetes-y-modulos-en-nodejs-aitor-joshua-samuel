@@ -4,6 +4,7 @@ console.dir(argv.x);
 
 if(JSON.stringify(argv) == '{"_":[]}'){
  console.log("Añada un comando correcto");
+ console.log("-> -n [NOMBRE DE DIR]");
 }
 if(argv.n){
 	fs.createDir("./" + argv.n, function(err){
