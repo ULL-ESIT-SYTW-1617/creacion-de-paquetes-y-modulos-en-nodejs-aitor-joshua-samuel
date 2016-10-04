@@ -8,9 +8,16 @@ if(JSON.stringify(argv) == '{"_":[]}'){
 }
 if(argv.n){
 	fs.createDir("./" + argv.n, function(err){
-		console.log(err);
-	})
+    if(err)
+      console.log(err);
+	});
+
+fs.copyDir("./txt", "./" + argv.n, function (err) {
+  if (err) return console.error(err)
+    console.log("success!")
+})
 }
+
 
 if(argv.i)
 {
