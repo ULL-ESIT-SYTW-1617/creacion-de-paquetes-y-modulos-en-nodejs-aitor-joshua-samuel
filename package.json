@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Tareas iniciales",
   "main": "index.js",
-  "bin" : { "gitbook-start" : "./bin/gitbook-start.js" },
+  "bin": {
+    "gitbook-start": "./bin/gitbook-start.js"
+  },
   "scripts": {
     "generate-gitbook": "./scripts/losh generate-gitbook",
     "generate-wiki": "./scripts/losh generate-wiki",
@@ -40,6 +42,7 @@
     "gulp-shell": "^0.5.2"
   },
   "dependencies": {
+    "fs-extra": "^0.22.1",
     "minimist": "^1.2.0"
   }
 }
