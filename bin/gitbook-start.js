@@ -18,11 +18,9 @@ if(argv.n){
 	});
 
 	fs.copyDir("./txt", "./" + argv.n + "/txt", function (err) {
-  	if (err) return console.error(err)
-    	console.log("success!")
+  	if (err)
+      console.error(err)
 	})
-
-	
 
 	fs.createDir("./" + argv.n + "/scripts", function(err){
     if(err)
@@ -30,13 +28,20 @@ if(argv.n){
 	});
 
 	fs.copyDir("./txt", "./" + argv.n + "/scripts", function (err) {
-  	if (err) return console.error(err)
-    	console.log("success!")
-	})
+  	if (err)
+      console.error(err)
+	});
+
+  fs.copyFile("./gulpfile.js","./" + argv.n+ "/gulpfile.js",function(err){
+    if(err)
+      console.log(err);
+  });
+
+  fs.copyFile("./book.json","./" + argv.n + "/book.json",function(err){
+    if(err)
+    console.log(err);
+  });
 }
-
-
-
 
 if(argv.i)
 {
