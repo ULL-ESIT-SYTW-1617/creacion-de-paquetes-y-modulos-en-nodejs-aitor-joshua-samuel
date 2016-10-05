@@ -21,7 +21,21 @@ if(argv.n){
   	if (err) return console.error(err)
     	console.log("success!")
 	})
+
+	
+
+	fs.createDir("./" + argv.n + "/scripts", function(err){
+    if(err)
+      console.log(err);
+	});
+
+	fs.copyDir("./txt", "./" + argv.n + "/scripts", function (err) {
+  	if (err) return console.error(err)
+    	console.log("success!")
+	})
 }
+
+
 
 
 if(argv.i)
