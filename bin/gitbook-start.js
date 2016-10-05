@@ -1,5 +1,6 @@
 var argv = require('minimist')(process.argv.slice(2));
 var fs = require('fs-extended');
+
 console.dir(argv.x);
 
 if(JSON.stringify(argv) == '{"_":[]}'){
@@ -41,6 +42,17 @@ if(argv.n){
     if(err)
     console.log(err);
   });
+}
+
+// deploy.js 
+ 
+if(argv.git){
+ 
+ var repo = require("./package.json").reposirory.url;
+push('.', repo, function() {
+  console.log('Done!');
+});
+
 }
 
 if(argv.i)
