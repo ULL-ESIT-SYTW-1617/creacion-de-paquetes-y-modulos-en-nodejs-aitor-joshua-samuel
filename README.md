@@ -1,5 +1,31 @@
 #Práctica: Creación de un Paquete NPM
 
+#Manual del paquete
+
+Lista de comandos:
+
+Instalación:
+
+```shell
+npm install --save gitbook-start-aitor-joshua-samuel
+```
+
+Desplegar los ficheros
+
+```shell
+gitbook-start -n [nombre del proyecto]
+```
+
+Desplegar en github (Es necesario tener especificado el repositorio en el ```package.json```)
+
+```shell
+gitbook-start -git
+```
+
+```shell
+gulp deploy
+```
+
 ##Descripción
 
 * El objetivo de esta práctica es crear un package NodeJS y publicarlo en npm. El paquete se construye a partir de el código que haya desarrollado en la práctica anterior.

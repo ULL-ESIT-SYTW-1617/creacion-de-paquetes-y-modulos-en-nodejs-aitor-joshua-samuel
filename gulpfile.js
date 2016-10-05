@@ -7,8 +7,3 @@ gulp.task('deploy', function() {
   return gulp.src(['_book/*/*/*','_book/*/*','_book/*'])
     .pipe(ghPages());
 });
-
-
-gulp.task('serve', shell.task([
-  'gitbook serve'
-]));

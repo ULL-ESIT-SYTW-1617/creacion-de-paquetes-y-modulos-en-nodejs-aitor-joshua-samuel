@@ -1,8 +1,8 @@
 {
-  "name": "tareas-iniciales",
-  "version": "0.0.1",
-  "description": "Tareas iniciales",
-  "main": "index.js",
+  "name": "gitbook-start-aitor-joshua-samuel",
+  "version": "0.0.3",
+  "description": "A cli for gitbook deploys",
+  "main": "bin/gitbook-start.js",
   "bin": {
     "gitbook-start": "./bin/gitbook-start.js"
   },
@@ -23,7 +23,7 @@
   },
   "keywords": [
     "gitbook",
-    "boilerplate",
+    "cli",
     "starter"
   ],
   "author": "Aitor Bernal Falcón <alu0100830064@ull.edu.es> (https://alu0100830064.github.io/), Joshua Perez García <alu0100830064@ull.edu.es> (https://joshuape.github.io/), Samuel Ramos Barroso <alu0100815146@ull.edu.es> (https://losnen.github.io/)",
