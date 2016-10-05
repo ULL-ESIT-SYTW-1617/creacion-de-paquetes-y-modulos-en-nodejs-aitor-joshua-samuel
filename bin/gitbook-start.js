@@ -12,10 +12,15 @@ if(argv.n){
       console.log(err);
 	});
 
-fs.copyDir("./txt", "./" + argv.n, function (err) {
-  if (err) return console.error(err)
-    console.log("success!")
-})
+	fs.createDir("./" + argv.n + "/txt", function(err){
+    if(err)
+      console.log(err);
+	});
+
+	fs.copyDir("./txt", "./" + argv.n + "/txt", function (err) {
+  	if (err) return console.error(err)
+    	console.log("success!")
+	})
 }
 
 
