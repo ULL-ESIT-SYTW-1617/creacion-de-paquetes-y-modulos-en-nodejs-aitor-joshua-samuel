@@ -2,6 +2,8 @@
 
 #Manual del paquete
 
+[Enlace al paquete](https://www.npmjs.com/package/gitbook-start-aitor-joshua-samuel)
+
 Lista de comandos:
 
 Instalación:
@@ -16,11 +18,13 @@ Desplegar los ficheros
 gitbook-start -n [nombre del proyecto]
 ```
 
-Desplegar en github (Es necesario tener especificado el repositorio en el ```package.json```)
+Desplegar en github
 
 ```shell
-gitbook-start -git
+gulp deploy-github
 ```
+
+Despliegue en gh-pages
 
 ```shell
 gulp deploy
@@ -43,9 +47,8 @@ gulp deploy
 2. [Samuel Ramos Barroso](http://losnen.github.io/)
 3. [Joshua Pérez García](http://joshuape.github.io/)
 
-##Repositorios
+##Repositorio
 
-* [Fork del repositorio](https://github.com/Losnen/tareas-iniciales-aitor-joshua-samuel)
 * [Repositorio de entrega](https://github.com/ULL-ESIT-SYTW-1617/tareas-iniciales-aitor-joshua-samuel)
 
 ##Enlaces de interés

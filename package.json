@@ -1,6 +1,6 @@
 {
   "name": "gitbook-start-aitor-joshua-samuel",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A cli for gitbook deploys",
   "main": "bin/gitbook-start.js",
   "bin": {
@@ -18,8 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Losnen/tareas-iniciales-aitor-joshua-samuel",
-    "wiki": "https://github.com/enten/gitbook-boilerplate.wiki.git"
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/creacion-de-paquetes-y-modulos-en-nodejs-aitor-joshua-samuel"
   },
   "keywords": [
     "gitbook",
@@ -29,9 +28,9 @@
   "author": "Aitor Bernal Falcón <alu0100830064@ull.edu.es> (https://alu0100830064.github.io/), Joshua Perez García <alu0100830064@ull.edu.es> (https://joshuape.github.io/), Samuel Ramos Barroso <alu0100815146@ull.edu.es> (https://losnen.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Losnen/tareas-iniciales-aitor-joshua-samuel/issues"
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/creacion-de-paquetes-y-modulos-en-nodejs-aitor-joshua-samuel/issues"
   },
-  "homepage": "https://losnen.github.io/tareas-iniciales-aitor-joshua-samuel/",
+  "homepage": "https://www.npmjs.com/package/gitbook-start-aitor-joshua-samuel",
   "devDependencies": {
     "async": "^1.4.0",
     "fs-extra": "^0.22.1",
