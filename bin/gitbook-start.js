@@ -2,6 +2,7 @@
 
 var argv = require('minimist')(process.argv.slice(2));
 var fs = require('fs-extended');
+var path = require('path');
 
 if(JSON.stringify(argv) == '{"_":[]}'){
  console.log("Añada un comando correcto");
@@ -15,8 +16,8 @@ if(argv.h){
 }
 
 if(argv.n){
-
-	fs.copyDir("./node_modules/gitbook-start-aitor-joshua-samuel/template", "./" + argv.n, function (err) {
+	var second_path=path.resolve(__dirname,"../template")
+	fs.copyDir(second_path, "./" + argv.n, function (err) {
   	if (err)
       console.error(err)
 	});
