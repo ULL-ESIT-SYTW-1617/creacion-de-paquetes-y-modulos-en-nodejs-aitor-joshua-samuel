@@ -1,6 +1,10 @@
 #Práctica: Creación de un Paquete NPM
 
-#Manual del paquete
+##¿Qué hace el módulo?
+
+Crea una serie de directorios y ficheros que ayudan al usuario a desplegar un libro en gitbook con scripts
+
+##Manual del paquete
 
 [Enlace al paquete](https://www.npmjs.com/package/gitbook-start-aitor-joshua-samuel)
 
@@ -9,7 +13,13 @@ Lista de comandos:
 Instalación:
 
 ```shell
-npm install --save gitbook-start-aitor-joshua-samuel
+npm install -g gitbook-start-aitor-joshua-samuel
+```
+
+Ayuda:
+
+```shell
+gitbook-start -h 
 ```
 
 Desplegar los ficheros
