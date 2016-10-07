@@ -15,38 +15,10 @@ if(argv.h){
 }
 
 if(argv.n){
-	fs.createDir("./" + argv.n, function(err){
-    if(err)
-      console.log(err);
-	});
 
-	fs.createDir("./" + argv.n + "/txt", function(err){
-    if(err)
-      console.log(err);
-	});
-
-	fs.copyDir("./node_modules/gitbook-start-aitor-joshua-samuel/txt", "./" + argv.n + "/txt", function (err) {
-  	if (err)
-      console.error(err)
-	})
-
-	fs.createDir("./" + argv.n + "/scripts", function(err){
-    if(err)
-      console.log(err);
-	});
-
-	fs.copyDir("./node_modules/gitbook-start-aitor-joshua-samuel/scripts", "./" + argv.n + "/scripts", function (err) {
+	fs.copyDir("./node_modules/gitbook-start-aitor-joshua-samuel/template", "./" + argv.n, function (err) {
   	if (err)
       console.error(err)
 	});
 
-  fs.copyFile("./node_modules/gitbook-start-aitor-joshua-samuel/gulpfile.js","./" + argv.n+ "/gulpfile.js",function(err){
-    if(err)
-      console.log(err);
-  });
-
-  fs.copyFile("./node_modules/gitbook-start-aitor-joshua-samuel/book.json","./" + argv.n + "/book.json",function(err){
-    if(err)
-    console.log(err);
-  });
 }
