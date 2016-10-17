@@ -10,10 +10,8 @@ gulp.task('deploy', function() {
 });
 
 
-
-gulp.task('deploy-github', function() {
-  return gulp.src('.')
-    .pipe(deploy({
-      repository: require('package.json').repository.url
-    }));
-});
+gulp.task('deploy-github', shell.task([
+  'git add .',
+  'git commit -m "modificando"',
+  'git push origin master'
+]));
